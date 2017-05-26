@@ -7,6 +7,10 @@ img {
   border-radius: 50%
 }
 
+header {
+  text-align: center;
+}
+
 .open {
   text-align: center;
 }
@@ -17,17 +21,6 @@ img {
   margin-left: 125px;
 }
 
-.row2 li {
-  display: inline-block;
-  text-align: center;
-}
-
-.row3 li {
-  display: inline-block;
-  text-align: center;
-}
-
-.row4 li {
-  display: inline-block;
+.found {
   text-align: center;
 }
