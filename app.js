@@ -3,6 +3,8 @@
 var name;
 var correct = 0;
 
+document.write('To Recap:');
+
 while (name.toUpperCase() !== 'YES' || name.toUpperCase() !== 'Y') {
   name = prompt('This is the first of five YES or NO questions to unlock my life. \nHere is is a gimme\'. \n\nIs my name Kyle?\n\n\(Hint:YES\)');
   if (name.toUpperCase() === 'YES' || name.toUpperCase() === 'Y') {
@@ -10,6 +12,7 @@ while (name.toUpperCase() !== 'YES' || name.toUpperCase() !== 'Y') {
     alert(correct + ' of 5 correct.');
     console.log('Question 1: Understood my hint');
     console.log('correct: ' + correct);
+    document.write('My name is Kyle.');
     break;
   } else if (name.toUpperCase() === 'NO' || name.toUpperCase() === 'N') {
     alert('Hint: See Hint!');
@@ -29,6 +32,7 @@ if (island.toUpperCase() === 'YES' || island.toUpperCase() === 'Y') {
   correct++;
   alert(correct + ' of 5 correct.');
   console.log('correct: ' + correct);
+  document.write('I grew up on Camano Island.');
 } else {
   alert('Seriously? \"Yes\" and \"No\" are not difficult words.');
   console.log('Question 2: Not a \"Yes\" or \"No\" answer.');
@@ -40,6 +44,7 @@ if (age.toUpperCase() === 'YES' || age.toUpperCase() === 'Y') {
   correct++;
   alert('Yup and my birthday is August 27th.\n\nI expect birthday wishes \;\)\n\n' + correct + ' of 5 correct.');
   console.log('correct: ' + correct);
+  document.write('I am 28 years old.')
 } else if (age.toUpperCase() === 'NO' || age.toUpperCase() === 'N'){
   alert ('Rude');
   console.log('Question 3: Wrong');
@@ -51,11 +56,12 @@ if (age.toUpperCase() === 'YES' || age.toUpperCase() === 'Y') {
 var wife = prompt('Is my wife better than your wife?');
 
 while (wife.toUpperCase() !== 'YES' || wife.toUpperCase() !== 'Y') {
-  wife;
+  wife = prompt('Is my wife better than your wife?');
   if (wife.toUpperCase() === 'YES' || wife.toUpperCase() === 'Y') {
     correct++;
     alert('Never forget what was said by you today.\n\n' + correct + ' of 5 correct.');
     console.log('correct: ' + correct);
+    document.write('My wife is the best. Her name is Courtney.')
     break;
   } else if (wife.toUpperCase() === 'NO' || wife.toUpperCase() === 'N') {
     alert('You know what you have to say.\n\n\(I don\'t care if you don\'t have a wife\)');
@@ -71,6 +77,7 @@ var home = prompt('Do I get to call the Kitsap Peninsula my home?')
 if (home.toUpperCase() === 'YES' || home.toUpperCase() === 'Y') {
   correct++;
   alert('Yup my wife and I bought a home in the beautiful small town of Kingston.\n\n' + correct + ' of 5 correct.')
+  document.write('I live in Kingston, WA.')
 } else if (home.toUpperCase() === 'NO' || home.toUpperCase() === 'N'){
   alert('I know it is far but I love it over there and it is in fact where I live.');
   console.log('Question 5: Wrong');
