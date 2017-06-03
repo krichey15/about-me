@@ -8,7 +8,7 @@ while (name.toUpperCase() !== 'YES' || name.toUpperCase() !== 'Y') {
   if (name.toUpperCase() === 'YES' || name.toUpperCase() === 'Y') {
     correct++;
     alert(correct + ' of 5 correct.');
-    console.log('Understood my hint');
+    console.log('Question 1: Understood my hint');
     console.log('correct: ' + correct);
     break;
   } else if (name.toUpperCase() === 'NO' || name.toUpperCase() === 'N') {
@@ -16,7 +16,7 @@ while (name.toUpperCase() !== 'YES' || name.toUpperCase() !== 'Y') {
     console.log('Question 1: More than one try.');
   } else {
     alert('Seriously? \"Yes\" and \"No\" are not difficult words.');
-    console.log('Not a \"Yes\" or \"No\" answer.');
+    console.log('Question 1: Not a \"Yes\" or \"No\" answer.');
   }
 }
 
@@ -31,7 +31,7 @@ if (island.toUpperCase() === 'YES' || island.toUpperCase() === 'Y') {
   console.log('correct: ' + correct);
 } else {
   alert('Seriously? \"Yes\" and \"No\" are not difficult words.');
-  console.log('Not a \"Yes\" or \"No\" answer.');
+  console.log('Question 2: Not a \"Yes\" or \"No\" answer.');
 }
 
 var age = prompt('Am I under the age of 30?');
@@ -45,7 +45,7 @@ if (age.toUpperCase() === 'YES' || age.toUpperCase() === 'Y') {
   console.log('Question 3: Wrong');
 } else {
   alert('Seriously? \"Yes\" and \"No\" are not difficult words.');
-  console.log('Not a \"Yes\" or \"No\" answer.');
+  console.log('Question 3: Not a \"Yes\" or \"No\" answer.');
 }
 
 var wife = prompt('Is my wife better than your wife?');
@@ -62,6 +62,19 @@ while (wife.toUpperCase() !== 'YES' || wife.toUpperCase() !== 'Y') {
     console.log('Question 4: More than one try.');
   } else {
     alert('Seriously? \"Yes\" and \"No\" are not difficult words.');
-    console.log('Not a \"Yes\" or \"No\" answer.');
+    console.log('Question 4: Not a \"Yes\" or \"No\" answer.');
   }
+}
+
+var home = prompt('Do I get to call the Kitsap Peninsula my home?')
+
+if (home.toUpperCase() === 'YES' || home.toUpperCase() === 'Y') {
+  correct++;
+  alert('Yup my wife and I bought a home in the beautiful small town of Kingston.\n\n' + correct + ' of 5 correct.')
+} else if (home.toUpperCase() === 'NO' || home.toUpperCase() === 'N'){
+  alert('I know it is far but I love it over there and it is in fact where I live.');
+  console.log('Question 5: Wrong');
+}else {
+  alert('Seriously? \"Yes\" and \"No\" are not difficult words.');
+  console.log('Question 5: Not a \"Yes\" or \"No\" answer.');
 }
