@@ -1,0 +1,22 @@
+body {
+  color: white;
+  background-color: gray;
+}
+
+img {
+  border-radius: 50%
+}
+
+header {
+  text-align: center;
+}
+
+.homeRow li {
+  display: inline-block;
+  text-align: center;
+  margin-left: 125px;
+}
+
+.found {
+  text-align: center;
+}
