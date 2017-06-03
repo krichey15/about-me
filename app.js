@@ -51,7 +51,7 @@ if (age.toUpperCase() === 'YES' || age.toUpperCase() === 'Y') {
 var wife = prompt('Is my wife better than your wife?');
 
 while (wife.toUpperCase() !== 'YES' || wife.toUpperCase() !== 'Y') {
-  wife = prompt('Is my wife better than your wife?');
+  wife;
   if (wife.toUpperCase() === 'YES' || wife.toUpperCase() === 'Y') {
     correct++;
     alert('Never forget what was said by you today.\n\n' + correct + ' of 5 correct.');
@@ -77,4 +77,10 @@ if (home.toUpperCase() === 'YES' || home.toUpperCase() === 'Y') {
 }else {
   alert('Seriously? \"Yes\" and \"No\" are not difficult words.');
   console.log('Question 5: Not a \"Yes\" or \"No\" answer.');
+}
+
+if (correct === 5){
+  document.write('PERFECT SCORE! CONGRATULATIONS!');
+}else {
+  document.write('Womp Womp! You could always refresh the page and try again.');
 }
