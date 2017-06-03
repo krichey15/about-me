@@ -13,7 +13,7 @@ while (name.toUpperCase() !== 'YES' || name.toUpperCase() !== 'Y') {
     break;
   } else if (name.toUpperCase() === 'NO' || name.toUpperCase() === 'N') {
     alert('Hint: See Hint!');
-    console.log('More than one try.');
+    console.log('Question 1: More than one try.');
   } else {
     alert('Seriously? \"Yes\" and \"No\" are not difficult words.');
     console.log('Not a \"Yes\" or \"No\" answer.');
@@ -37,13 +37,31 @@ if (island.toUpperCase() === 'YES' || island.toUpperCase() === 'Y') {
 var age = prompt('Am I under the age of 30?');
 
 if (age.toUpperCase() === 'YES' || age.toUpperCase() === 'Y') {
-  alert('Yup and my birthday is August 27th.\n\nI expect birthday wishes \;\)\n\n' + correct + ' of 5 correct.');
   correct++;
+  alert('Yup and my birthday is August 27th.\n\nI expect birthday wishes \;\)\n\n' + correct + ' of 5 correct.');
   console.log('correct: ' + correct);
 } else if (age.toUpperCase() === 'NO' || age.toUpperCase() === 'N'){
-  alert ('Rude')
-  console.log('Question 3: Wrong')
+  alert ('Rude');
+  console.log('Question 3: Wrong');
 } else {
   alert('Seriously? \"Yes\" and \"No\" are not difficult words.');
   console.log('Not a \"Yes\" or \"No\" answer.');
+}
+
+var wife = prompt('Is my wife better than your wife?');
+
+while (wife.toUpperCase() !== 'YES' || wife.toUpperCase() !== 'Y') {
+  wife = prompt('Is my wife better than your wife?');
+  if (wife.toUpperCase() === 'YES' || wife.toUpperCase() === 'Y') {
+    correct++;
+    alert('Never forget what was said by you today.\n\n' + correct + ' of 5 correct.');
+    console.log('correct: ' + correct);
+    break;
+  } else if (wife.toUpperCase() === 'NO' || wife.toUpperCase() === 'N') {
+    alert('You know what you have to say.\n\n\(I don\'t care if you don\'t have a wife\)');
+    console.log('Question 4: More than one try.');
+  } else {
+    alert('Seriously? \"Yes\" and \"No\" are not difficult words.');
+    console.log('Not a \"Yes\" or \"No\" answer.');
+  }
 }
