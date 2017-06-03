@@ -4,6 +4,8 @@ var name;
 var correct = 0;
 
 document.write('To Recap:');
+function nameQuestion(){
+
 
 while (name.toUpperCase() !== 'YES' || name.toUpperCase() !== 'Y') {
   name = prompt('This is the first of five YES or NO questions to unlock my life. \nHere is is a gimme\'. \n\nIs my name Kyle?\n\n\(Hint:YES\)');
@@ -22,6 +24,8 @@ while (name.toUpperCase() !== 'YES' || name.toUpperCase() !== 'Y') {
     console.log('Question 1: Not a \"Yes\" or \"No\" answer.');
   }
 }
+}
+nameQuestion();
 
 var island = prompt('Did I grow up in the San Juan Islands?');
 
