@@ -33,40 +33,17 @@ if (island.toUpperCase() === 'YES' || island.toUpperCase() === 'Y') {
   alert('Seriously? \"Yes\" and \"No\" are not difficult words.');
   console.log('Not a \"Yes\" or \"No\" answer.');
 }
-/*
-while (origin.toUpperCase() !== 'YES' || 'Y') {
-  origin = prompt('')
-  if (orign.toUpperCase() === 'YES' || 'Y') {
-    break;
-  }
-  alert();
-  console.log();
-}
-correct++
-console.log();
-console.log();
 
-while (origin.toUpperCase() !== 'YES' || 'Y') {
-  origin = prompt('')
-  if (orign.toUpperCase() === 'YES' || 'Y') {
-    break;
-  }
-  alert();
-  console.log();
-}
-correct++
-console.log();
-console.log();
+var age = prompt('Am I under the age of 30?');
 
-while (origin.toUpperCase() !== 'YES' || 'Y') {
-  origin = prompt('')
-  if (orign.toUpperCase() === 'YES' || 'Y') {
-    break;
-  }
-  alert();
-  console.log();
+if (age.toUpperCase() === 'YES' || age.toUpperCase() === 'Y') {
+  alert('Yup and my birthday is August 27th.\n\nI expect birthday wishes \;\)\n\n' + correct + ' of 5 correct.');
+  correct++;
+  console.log('correct: ' + correct);
+} else if (age.toUpperCase() === 'NO' || age.toUpperCase() === 'N'){
+  alert ('Rude')
+  console.log('Question 3: Wrong')
+} else {
+  alert('Seriously? \"Yes\" and \"No\" are not difficult words.');
+  console.log('Not a \"Yes\" or \"No\" answer.');
 }
-correct++
-console.log();
-console.log();
-*/
