@@ -20,3 +20,20 @@ header {
 .found {
   text-align: center;
 }
+
+.dropdown {
+  position: relative;
+  display:inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #a7bfe8;
+  width: 100%;
+  overflow: auto;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
