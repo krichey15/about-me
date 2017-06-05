@@ -89,7 +89,7 @@ if (correct === 5){
   document.write('<br>')
 }else {
   document.write('<br>');
-  document.write('Womp Womp! only ' + correct + 'of 5 correct. You could always refresh the page and try again.');
+  document.write('Womp Womp! only ' + correct + ' of 5 correct. You could always refresh the page and try again.');
   document.write('<br>');
 }
 
