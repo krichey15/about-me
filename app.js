@@ -93,10 +93,10 @@ if (correct === 5){
   document.write('<br>');
 }
 
-document.write('To Recap:')
+document.write('To Recap:');
 document.write('<br>');
 document.write('My name is Kyle.');
-document.write('<br>')
+document.write('<br>');
 document.write('I live in Kingston, WA.');
 document.write('<br>');
 document.write('I grew up on Camano Island.');
