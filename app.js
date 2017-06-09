@@ -2,7 +2,7 @@
 
 var name;
 var correct = 0;
-var userName = prompt(Well hey there what is your name?);
+var userName = prompt('Well hey there what is your name?');
 
 if (userName.toUpperCase() === 'KYLE'){
   alert('I see you have been blessed with the best name as well.');
