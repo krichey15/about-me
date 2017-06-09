@@ -2,7 +2,12 @@
 
 var name;
 var correct = 0;
+var userName = prompt(Well hey there what is your name?);
 
+if (userName.toUpperCase() === 'KYLE'){
+  alert('I see you have been blessed with the best name as well.');
+} else {
+}
 
 while (name.toUpperCase() !== 'YES' || name.toUpperCase() !== 'Y') {
   name = prompt('This is the first of five YES or NO questions to unlock my life. \nHere is is a gimme\'. \n\nIs my name Kyle?\n\n\(Hint:YES\)');
@@ -73,6 +78,7 @@ var home = prompt('Do I get to call the Kitsap Peninsula my home?');
 
 if (home.toUpperCase() === 'YES' || home.toUpperCase() === 'Y') {
   correct++;
+  console.log('correct: ' + correct);
   alert('Yup my wife and I bought a home in the beautiful small town of Kingston.\n\n' + correct + ' of 5 correct.')
 } else if (home.toUpperCase() === 'NO' || home.toUpperCase() === 'N'){
   alert('I know it is far but I love it over there and it is in fact where I live.');
@@ -82,6 +88,30 @@ if (home.toUpperCase() === 'YES' || home.toUpperCase() === 'Y') {
   console.log('Question 5: Not a \"Yes\" or \"No\" answer.');
 }
 
+var housesWrong = 0;
+var houses = prompt('I have lived in my fair share of places. How many would you guess?\n\n (Your guess should be a number.)');
+
+while(housesWrong !== 4){
+  var houses = prompt('I have lived in my fair share of places. How many would you guess?\n\n (Your guess should be a number.)');
+  if (houses === 12){
+    correct++;
+    alert('You got it ' + userName + '!'  )
+    console.log('correct: ' + correct);
+    break;
+  } else if (houses > 12){
+    housesWrong++;
+    alert(userName + ' I am not that mobile!');
+    console.log('guessed to high ' + housesWrong + ' times.');
+  } else if (houses < 12){
+    housesWrong++;
+    alert(userName + ' I have moved more than that.');
+    console.log('guessed to low ' + housesWrong + ' times.');
+  } else{
+    housesWrong++;
+    alert(userName + ' Make sure you entered a number.');
+    console.log('no number entered ' + housesWrong + 'times.');
+  }
+}
 
 if (correct === 5){
   document.write('<br>');
