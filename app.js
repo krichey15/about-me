@@ -89,11 +89,11 @@ if (home.toUpperCase() === 'YES' || home.toUpperCase() === 'Y') {
 }
 
 var housesWrong = 0;
-var houses = prompt('I have lived in my fair share of places. How many would you guess?\n\n (Your guess should be a number.)');
+// var houses = prompt('I have lived in my fair share of places. How many would you guess?\n\n (Your guess should be a number.)');
 
 while(housesWrong !== 4){
   var houses = prompt('I have lived in my fair share of places. How many would you guess?\n\n (Your guess should be a number.)');
-  if (houses === 12){
+  if (houses == 12){
     correct++;
     alert('You got it ' + userName + '!'  )
     console.log('correct: ' + correct);
