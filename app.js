@@ -13,7 +13,7 @@ while (name.toUpperCase() !== 'YES' || name.toUpperCase() !== 'Y') {
   name = prompt('This is the first of five YES or NO questions to unlock my life. \nHere is is a gimme\'. \n\nIs my name Kyle?\n\n\(Hint:YES\)');
   if (name.toUpperCase() === 'YES' || name.toUpperCase() === 'Y') {
     correct++;
-    alert(correct + ' of 5 correct.');
+    alert(correct + ' of 7 correct.');
     console.log('Question 1: Understood my hint');
     console.log('correct: ' + correct);
     break;
@@ -33,7 +33,7 @@ if (island.toUpperCase() === 'YES' || island.toUpperCase() === 'Y') {
   console.log('Question 2: Wrong');
 } else if (island.toUpperCase() === 'NO' || island.toUpperCase() === 'N'){
   correct++;
-  alert(correct + ' of 5 correct.');
+  alert(correct + ' of 7 correct.');
   console.log('correct: ' + correct);
 } else {
   alert('Seriously? \"Yes\" and \"No\" are not difficult words.');
@@ -44,7 +44,7 @@ var age = prompt('Am I under the age of 30?');
 
 if (age.toUpperCase() === 'YES' || age.toUpperCase() === 'Y') {
   correct++;
-  alert('Yup and my birthday is August 27th.\n\nI expect birthday wishes \;\)\n\n' + correct + ' of 5 correct.');
+  alert('Yup and my birthday is August 27th.\n\nI expect birthday wishes \;\)\n\n' + correct + ' of 7 correct.');
   console.log('correct: ' + correct);
 } else if (age.toUpperCase() === 'NO' || age.toUpperCase() === 'N'){
   alert ('Rude');
@@ -60,7 +60,7 @@ while (wife.toUpperCase() !== 'YES' || wife.toUpperCase() !== 'Y') {
   wife = prompt('Is my wife better than your wife?');
   if (wife.toUpperCase() === 'YES' || wife.toUpperCase() === 'Y') {
     correct++;
-    alert('Never forget what was said by you today.\n\n' + correct + ' of 5 correct.');
+    alert('Never forget what was said by you today.\n\n' + correct + ' of 7 correct.');
     console.log('correct: ' + correct);
     break;
   } else if (wife.toUpperCase() === 'NO' || wife.toUpperCase() === 'N') {
@@ -79,7 +79,7 @@ var home = prompt('Do I get to call the Kitsap Peninsula my home?');
 if (home.toUpperCase() === 'YES' || home.toUpperCase() === 'Y') {
   correct++;
   console.log('correct: ' + correct);
-  alert('Yup my wife and I bought a home in the beautiful small town of Kingston.\n\n' + correct + ' of 5 correct.')
+  alert('Yup my wife and I bought a home in the beautiful small town of Kingston.\n\n' + correct + ' of 7 correct.')
 } else if (home.toUpperCase() === 'NO' || home.toUpperCase() === 'N'){
   alert('I know it is far but I love it over there and it is in fact where I live.');
   console.log('Question 5: Wrong');
@@ -89,27 +89,26 @@ if (home.toUpperCase() === 'YES' || home.toUpperCase() === 'Y') {
 }
 
 var housesWrong = 0;
-// var houses = prompt('I have lived in my fair share of places. How many would you guess?\n\n (Your guess should be a number.)');
 
 while(housesWrong !== 4){
   var houses = prompt('I have lived in my fair share of places. How many would you guess?\n\n (Your guess should be a number.)');
   if (houses == 12){
     correct++;
-    alert('You got it ' + userName + '!'  )
+    alert('You got it ' + userName + '!\n\n' + correct + 'out of 7 correct');
     console.log('correct: ' + correct);
     break;
   } else if (houses > 12){
     housesWrong++;
     alert(userName + ' I am not that mobile!');
-    console.log('guessed to high ' + housesWrong + ' times.');
+    console.log('guessed to high');
   } else if (houses < 12){
     housesWrong++;
     alert(userName + ' I have moved more than that.');
-    console.log('guessed to low ' + housesWrong + ' times.');
+    console.log('guessed to low');
   } else{
     housesWrong++;
     alert(userName + ' Make sure you entered a number.');
-    console.log('no number entered ' + housesWrong + 'times.');
+    console.log('no number entered');
   }
 }
 
