@@ -118,24 +118,28 @@ var attempts = 0;
 
 var cities = ['CAMANO ISLAND', 'STANWOOD', 'BELLINGHAM', 'LAKE FOREST PARK', 'SEATTLE', 'POULSBO', 'SUQUAMISH', 'KINGSTON'];
 
-while (attempts !== 6){
-  var whichCity = prompt('Can you guess a city I have lived in in the past?\n\n I will give you 6 tries.').toUpperCase();
 
-  for(var i = 0; i < cities.length; i++){
-    if(whichCity === cities[i]){
-      correct++;
-      alert(correct + ' of 7 correct.');
-      console.log('Correct: ' + correct);
-      break;
-    } else {
-      alert('Try again\n\n HINT: Use previous questions for clues.');
-      attempts++;
-      console.log('User had ' + attempts + 'attempts.');
-      // whichCity = prompt('Can you guess a city I have lived in in the past?\n\n I will give you 6 tries.');
-      break;
-    }
+var whichCity = prompt('Can you guess a city I have lived in in the past?\n\n I will give you 6 tries.');
+
+for(var i = 0; i < cities.length; i++){
+  console.log(cities[i]);
+  if (whichCity.toUpperCase() === cities[i]){
+    var result = true;
   }
-  console.log('out of for loop');
+}
+// currently at 7 attempts before break.
+while (attempts !== 6){
+  if(result){
+    correct++;
+    alert(correct + ' of 7 correct.');
+    console.log('Correct: ' + correct);
+    break;
+  } else {
+    alert('Try again\n\n HINT: Use previous questions for clues.');
+    attempts++;
+    console.log('User had ' + attempts + ' attempts.');
+    whichCity = prompt('Can you guess a city I have lived in in the past?\n\n I will give you 6 tries.');
+  }
 }
 console.log('out of while loop');
 
