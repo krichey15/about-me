@@ -92,6 +92,12 @@ function kitsap(){
   }
 }
 
+myName();
+whichIsland();
+howOld();
+betterWife();
+kitsap();
+
 if (correct === 5){
   document.write('<br>');
   document.write('PERFECT SCORE! CONGRATULATIONS!');
@@ -101,9 +107,3 @@ if (correct === 5){
   document.write('Womp Womp! only ' + correct + ' of 5 correct. You could always refresh the page and try again.');
   document.write('<br>');
 }
-
-myName();
-whichIsland();
-howOld();
-betterWife();
-kitsap();
